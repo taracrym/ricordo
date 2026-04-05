@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(python3 -c \"import shutil; shutil.copy\\(''/Users/taracrymble/Desktop/Screenshot 2026-03-31 at 10.45.59 PM.png'', ''/Users/taracrymble/ricordo/public/hero.png''\\)\")",
+      "Bash(ls ~/Desktop/*.png)",
+      "Bash(rsync \"/Users/taracrymble/Desktop/Screenshot 2026-03-31 at 10.45.59 PM.png\" /Users/taracrymble/ricordo/public/hero.png)",
+      "Bash(python3 -c \"import shutil; shutil.copy\\(''/Users/taracrymble/Desktop/Screenshot 2026-03-31 at 10.45.47 PM.jpeg'', ''/Users/taracrymble/ricordo/public/bag.jpg''\\)\")",
+      "Bash(ls ~/Desktop/*.jpeg ~/Desktop/*.jpg)",
+      "Bash(git --version)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}
