@@ -36,7 +36,7 @@ export default function Home() {
               fontFamily="var(--font-nunito)"
               fontSize="xl"
               fontWeight="900"
-              color="#F3C12C"
+              color="#efc374"
               letterSpacing="-0.02em"
               userSelect="none"
             >
@@ -127,8 +127,8 @@ export default function Home() {
                       className="stamp reveal d2"
                       as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
                       textAlign="left" onClick={() => setModal("creator")}
-                      style={{ boxShadow: "0 6px 28px rgba(19,57,81,0.10)", transition: "all 0.2s ease" }}
-                      _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(19,57,81,0.16)" } as never}
+                      style={{ boxShadow: "0 6px 28px rgba(74,105,179,0.10)", transition: "all 0.2s ease" }}
+                      _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(74,105,179,0.18)" } as never}
                     >
                       <Flex align="center" gap={4}>
                         <Box w="42px" h="42px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
@@ -264,7 +264,7 @@ export default function Home() {
               lineHeight="1.1"
             >
               Edited videos, captions, and raw clips.{" "}
-              <Box as="span" color="#F3C12C">Delivered within 48 hours.</Box>
+              <Box as="span" color="#FFEC89">Delivered within 48 hours.</Box>
             </Text>
           </Box>
         </Box>
@@ -373,7 +373,7 @@ export default function Home() {
               fontFamily="var(--font-nunito)"
               fontSize={{ base: "3xl", md: "7xl" }}
               fontWeight="900"
-              color="var(--melon)"
+              color="var(--limoncello)"
               letterSpacing="-0.04em"
               lineHeight="0.9"
               mb={5}
@@ -475,7 +475,7 @@ export default function Home() {
                 _hover={{ transform: "translateY(-2px)", boxShadow: "0 8px 28px rgba(26,79,122,0.16)" } as never}
               >
                 <Flex align="center" gap={4}>
-                  <Box w="40px" h="40px" borderRadius="50%" bg="#F5EAC0" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
+                  <Box w="40px" h="40px" borderRadius="50%" bg="#FFFAE0" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
                     <PiCameraLight size={20} />
                   </Box>
                   <VStack align="start" gap={0}>
@@ -491,7 +491,7 @@ export default function Home() {
                 _hover={{ transform: "translateY(-2px)", boxShadow: "0 8px 28px rgba(232,87,26,0.16)" } as never}
               >
                 <Flex align="center" gap={4}>
-                  <Box w="40px" h="40px" borderRadius="50%" bg="#F5EAC0" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
+                  <Box w="40px" h="40px" borderRadius="50%" bg="#FFFAE0" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
                     <PiStorefrontLight size={20} />
                   </Box>
                   <VStack align="start" gap={0}>

@@ -293,7 +293,7 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
                 disabled={loading}
                 style={{
                   width: "100%",
-                  background: loading ? "#C07060" : "#F3C12C",
+                  background: loading ? "#C07060" : "#BA3801",
                   color: "white",
                   borderRadius: "12px",
                   padding: "16px",
