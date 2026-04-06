@@ -116,7 +116,7 @@ export default function Home() {
                       className="reveal d1"
                       fontFamily="var(--font-dm-sans)"
                       fontSize={{ base: "sm", md: "md" }}
-                      color="var(--muted)"
+                      color="var(--dark)"
                       lineHeight="1.75"
                     >
                       Creators get paid doing what they love.
@@ -136,7 +136,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Get paid to film local businesses</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid to film local businesses</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -154,7 +154,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Find a local creator who gets your brand</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Find a local creator who gets your brand</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -189,7 +189,7 @@ export default function Home() {
             <Text
               className="reveal"
               fontFamily="var(--font-nunito)"
-              fontSize={{ base: "4xl", md: "8xl" }}
+              fontSize={{ base: "3.125rem", md: "7.75rem" }}
               fontWeight="900"
               color="var(--dark)"
               letterSpacing="-0.04em"
@@ -200,9 +200,9 @@ export default function Home() {
             </Text>
             <VStack gap={{ base: 0, md: 0 }} align="stretch">
               {[
-                { num: "01", title: "The match is made", body: null, color: "var(--melon)" },
-                { num: "02", title: "Content comes to life", body: null, color: "var(--melon)" },
-                { num: "03", title: "Everyone wins", body: null, color: "var(--melon)" },
+                { num: "01", title: "The match is made", body: null, color: "#efc374" },
+                { num: "02", title: "Content comes to life", body: null, color: "#efc374" },
+                { num: "03", title: "Everyone wins", body: null, color: "#efc374" },
               ].map((step, idx) => (
                 <Box
                   key={step.num}
@@ -226,17 +226,17 @@ export default function Home() {
                       <Text fontFamily="var(--font-nunito)" fontSize={{ base: "lg", md: "xl" }} fontWeight="900" color="var(--dark)" letterSpacing="-0.01em" lineHeight="1.2">{step.title}</Text>
                     )}
                     {step.body ? (
-                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--muted)" lineHeight="1.75">{step.body}</Text>
+                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">{step.body}</Text>
                     ) : step.num === "01" ? (
-                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--muted)" lineHeight="1.75">
+                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
                         We pair a creator who fits your niche with a business worth filming. Both sides see each other&apos;s profile before anything starts.
                       </Text>
                     ) : step.num === "02" ? (
-                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--muted)" lineHeight="1.75">
+                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
                         The creator films on-location with a shot list built for Reels + TikTok. The business stays as hands-on or hands-off as they want.
                       </Text>
                     ) : step.num === "03" ? (
-                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--muted)" lineHeight="1.75">
+                      <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
                         Creators get paid. Businesses get edited videos, captions, and raw clips — ready to post within 48 hours.
                       </Text>
                     ) : null}
@@ -250,7 +250,7 @@ export default function Home() {
 
         {/* ── DELIVERABLE STATEMENT ── */}
         <Box
-          bg="var(--marine)" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
+          bg="var(--dark)" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
           position="relative" zIndex={2}
         >
           <Box maxW="960px" mx="auto">
@@ -258,7 +258,7 @@ export default function Home() {
               className="reveal"
               fontFamily="var(--font-nunito)"
               fontWeight="900"
-              fontSize={{ base: "2xl", md: "5xl" }}
+              fontSize={{ base: "2xl", md: "4rem" }}
               color="white"
               letterSpacing="-0.03em"
               lineHeight="1.1"
@@ -281,7 +281,7 @@ export default function Home() {
                 <Text
                   className="reveal-l"
                   fontFamily="var(--font-nunito)"
-                  fontSize={{ base: "4xl", md: "6xl" }}
+                  fontSize={{ base: "3.125rem", md: "5rem" }}
                   fontWeight="900"
                   color="var(--dark)"
                   letterSpacing="-0.03em"
@@ -296,7 +296,7 @@ export default function Home() {
                   fontFamily="var(--font-cormorant)"
                   fontStyle="italic"
                   fontSize={{ base: "xl", md: "2xl" }}
-                  color="var(--muted)"
+                  color="var(--dark)"
                   lineHeight="1.5"
                 >
                   No contracts. No subscriptions.<br />No obligation to continue.
@@ -311,10 +311,10 @@ export default function Home() {
                   style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.10)" }}
                 >
                   <VStack align="start" gap={1}>
-                    <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--melon)" letterSpacing="-0.01em">
+                    <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--dark)" letterSpacing="-0.01em">
                       Not an agency.
                     </Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--muted)" lineHeight="1.75">
+                    <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
                       A curated network of local creators who know your city and film your story. Book one shoot, get content that&apos;s ready to post.
                     </Text>
                   </VStack>
@@ -336,8 +336,8 @@ export default function Home() {
               className="reveal"
               fontFamily="var(--font-nunito)"
               fontWeight="900"
-              fontSize={{ base: "8xl", md: "9xl" }}
-              color="var(--melon)"
+              fontSize={{ base: "7.75rem", md: "10rem" }}
+              color="var(--dark)"
               letterSpacing="-0.04em"
               lineHeight="0.85"
               mb={5}
@@ -357,7 +357,7 @@ export default function Home() {
             >
               of consumers discover new businesses on social media.
             </Text>
-            <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" letterSpacing="0.08em" textTransform="uppercase">— Sprinklr</Text>
+            <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)" letterSpacing="0.08em" textTransform="uppercase">— Sprinklr</Text>
           </Box>
         </Box>
 
@@ -365,15 +365,15 @@ export default function Home() {
         <Box
           px={{ base: 6, md: 12 }} py={{ base: 20, md: 32 }}
           position="relative" zIndex={2}
-          bg="var(--marine)"
+          bg="var(--dark)"
         >
           <Box maxW="960px" mx="auto">
             <Text
               className="reveal"
               fontFamily="var(--font-nunito)"
-              fontSize={{ base: "3xl", md: "7xl" }}
+              fontSize={{ base: "2.5rem", md: "6.25rem" }}
               fontWeight="900"
-              color="var(--limoncello)"
+              color="#efc374"
               letterSpacing="-0.04em"
               lineHeight="0.9"
               mb={5}
@@ -384,7 +384,7 @@ export default function Home() {
               className="reveal d1"
               fontFamily="var(--font-dm-sans)"
               fontSize={{ base: "sm", md: "md" }}
-              color="rgba(255,255,255,0.85)"
+              color="white"
               lineHeight="1.6"
               mb={10}
               maxW="520px"
@@ -458,12 +458,12 @@ export default function Home() {
             <Box
               as="button" position="absolute" top={5} right={5}
               onClick={() => setModal(null)} bg="transparent" border="none"
-              cursor="pointer" color="var(--muted)" fontSize="22px" lineHeight={1}
+              cursor="pointer" color="var(--dark)" fontSize="22px" lineHeight={1}
             >✕</Box>
             <Text fontFamily="var(--font-nunito)" fontSize="2xl" fontWeight="900" color="var(--dark)" letterSpacing="-0.02em" mb={2}>
               join the network
             </Text>
-            <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)" mb={8} lineHeight="1.6">
+            <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--dark)" mb={8} lineHeight="1.6">
               Are you a creator or a business?
             </Text>
             <VStack gap={4} align="stretch">
@@ -479,7 +479,7 @@ export default function Home() {
                   </Box>
                   <VStack align="start" gap={0}>
                     <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)">I&apos;m a Creator</Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Get paid to film local businesses</Text>
+                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid to film local businesses</Text>
                   </VStack>
                 </Flex>
               </Box>
@@ -495,7 +495,7 @@ export default function Home() {
                   </Box>
                   <VStack align="start" gap={0}>
                     <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)">I&apos;m a Business</Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Authentic local content, on demand</Text>
+                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Authentic local content, on demand</Text>
                   </VStack>
                 </Flex>
               </Box>

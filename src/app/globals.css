@@ -22,6 +22,21 @@
   --sable: #efc374;
   --cobalt: #3A6E8A;
   --limoncello: #efc374;
+
+  /* Type scale — Major Third (×1.25), 14px minimum */
+  --text-xs:  0.875rem;  /*  14px */
+  --text-sm:  0.875rem;  /*  14px */
+  --text-md:  1rem;      /*  16px */
+  --text-lg:  1.25rem;   /*  20px */
+  --text-xl:  1.5rem;    /*  24px */
+  --text-2xl: 1.875rem;  /*  30px */
+  --text-3xl: 2.5rem;    /*  40px */
+  --text-4xl: 3.125rem;  /*  50px */
+  --text-5xl: 4rem;      /*  64px */
+  --text-6xl: 5rem;      /*  80px */
+  --text-7xl: 6.25rem;   /* 100px */
+  --text-8xl: 7.75rem;   /* 124px */
+  --text-9xl: 10rem;     /* 160px */
 }
 
 html { height: 100%; }
