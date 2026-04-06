@@ -95,8 +95,8 @@ export default function PhoneMockup() {
                 </div>
                 {/* Sender */}
                 <div style={{ display:"flex", gap:"10px", alignItems:"flex-start" }}>
-                  <div style={{ width:"34px", height:"34px", borderRadius:"50%", flexShrink:0, background:"#1B3344", display:"flex", alignItems:"center", justifyContent:"center" }}>
-                    <span style={{ fontFamily:"'Montserrat', system-ui", fontWeight:900, fontSize:"16px", color:"#efc374", letterSpacing:"-0.04em", lineHeight:1 }}>r</span>
+                  <div style={{ width:"40px", height:"40px", borderRadius:"50%", flexShrink:0, background:"#FAF8F2", border:"1.5px solid #E8DFC8", display:"flex", alignItems:"center", justifyContent:"center" }}>
+                    <span style={{ fontFamily:"'Montserrat', system-ui", fontWeight:900, fontSize:"20px", color:"#efc374", letterSpacing:"-0.04em", lineHeight:1 }}>r</span>
                   </div>
                   <div>
                     <div style={{ display:"flex", gap:"6px", alignItems:"center" }}>

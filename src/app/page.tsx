@@ -80,7 +80,7 @@ export default function Home() {
                     fontFamily="var(--font-nunito)"
                     fontSize={{ base: "clamp(26px, 7.5vw, 48px)", md: "clamp(64px, 10vw, 130px)" }}
                     fontWeight="900"
-                    color="var(--melon)"
+                    color="var(--marine)"
                     letterSpacing="-0.04em"
                     lineHeight="0.9"
                     position="absolute"
