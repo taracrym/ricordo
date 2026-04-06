@@ -450,7 +450,7 @@ export default function Home() {
         <Box position="fixed" inset={0} zIndex={100}>
           <Box position="fixed" inset={0} bg="rgba(0,0,0,0.7)" onClick={() => setModal(null)} />
           <Box
-            position="relative" zIndex={1} mx="auto"
+            position="relative" zIndex={1}
             maxW="480px" mt={{ base: "20vh", md: "25vh" }}
             bg="var(--bg)" borderRadius="20px" px={{ base: 6, md: 10 }} py={10}
             mx={{ base: 4, md: "auto" }}
