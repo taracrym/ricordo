@@ -49,7 +49,7 @@ const labelStyle: React.CSSProperties = {
 
 const focusStyle = {
   borderColor: "var(--melon)",
-  boxShadow: "0 0 0 3px rgba(186, 56, 1, 0.15)",
+  boxShadow: "0 0 0 3px rgba(104, 152, 176, 0.25)",
 }
 
 export default function BusinessFormModal({ onClose }: { onClose: () => void }) {
@@ -249,7 +249,7 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
                 disabled={loading}
                 style={{
                   width: "100%",
-                  background: loading ? "#C07060" : "#BA3801",
+                  background: loading ? "#7AAFC5" : "#3A6E8A",
                   color: "white",
                   borderRadius: "12px",
                   padding: "16px",

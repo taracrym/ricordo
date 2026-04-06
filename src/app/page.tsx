@@ -127,8 +127,8 @@ export default function Home() {
                       className="stamp reveal d2"
                       as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
                       textAlign="left" onClick={() => setModal("creator")}
-                      style={{ boxShadow: "0 6px 28px rgba(74,105,179,0.10)", transition: "all 0.2s ease" }}
-                      _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(74,105,179,0.18)" } as never}
+                      style={{ boxShadow: "0 6px 28px rgba(58,110,138,0.12)", transition: "all 0.2s ease" }}
+                      _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(58,110,138,0.22)" } as never}
                     >
                       <Flex align="center" gap={4}>
                         <Box w="42px" h="42px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
@@ -145,8 +145,8 @@ export default function Home() {
                       className="stamp reveal d3"
                       as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
                       textAlign="left" onClick={() => setModal("business")}
-                      style={{ boxShadow: "0 6px 28px rgba(243,193,44,0.15)", transition: "all 0.2s ease" }}
-                      _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(243,193,44,0.25)" } as never}
+                      style={{ boxShadow: "0 6px 28px rgba(58,110,138,0.12)", transition: "all 0.2s ease" }}
+                      _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(58,110,138,0.22)" } as never}
                     >
                       <Flex align="center" gap={4}>
                         <Box w="42px" h="42px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
@@ -264,7 +264,7 @@ export default function Home() {
               lineHeight="1.1"
             >
               Edited videos, captions, and raw clips.{" "}
-              <Box as="span" color="#FFEC89">Delivered within 48 hours.</Box>
+              <Box as="span" color="#efc374">Delivered within 48 hours.</Box>
             </Text>
           </Box>
         </Box>
@@ -308,7 +308,7 @@ export default function Home() {
                   className="stamp reveal d1"
                   bg="white"
                   px={5} py={5}
-                  style={{ boxShadow: "0 4px 20px rgba(26,79,122,0.08)" }}
+                  style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.10)" }}
                 >
                   <VStack align="start" gap={1}>
                     <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--melon)" letterSpacing="-0.01em">
@@ -329,35 +329,35 @@ export default function Home() {
           px={{ base: 6, md: 12 }} py={{ base: 16, md: 24 }}
           position="relative" zIndex={2}
           bg="var(--bg)"
+          textAlign="center"
         >
-          <Box maxW="960px" mx="auto">
-            <Grid templateColumns={{ base: "1fr", md: "5fr 4fr" }} gap={{ base: 12, md: 16 }} alignItems="start">
-              <Box>
-                <Text
-                  className="reveal"
-                  fontFamily="var(--font-cormorant)"
-                  fontStyle="italic"
-                  fontSize={{ base: "2xl", md: "4xl" }}
-                  fontWeight="600"
-                  color="var(--dark)"
-                  letterSpacing="-0.01em"
-                  lineHeight="1.2"
-                  mb={3}
-                >
-                  &ldquo;58% of consumers discover new businesses on social media.&rdquo;
-                </Text>
-                <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" letterSpacing="0.08em" textTransform="uppercase">— Sprinklr</Text>
-              </Box>
-              <Text
-                className="reveal d1"
-                fontFamily="var(--font-dm-sans)"
-                fontSize={{ base: "sm", md: "md" }}
-                color="var(--muted)"
-                lineHeight="1.8"
-              >
-                Short-form video gets prioritized by the algorithm — and consistently outperforms static posts. Local creators build real trust with real audiences. The result: more visibility, more people walking through your door.
-              </Text>
-            </Grid>
+          <Box maxW="600px" mx="auto">
+            <Text
+              className="reveal"
+              fontFamily="var(--font-nunito)"
+              fontWeight="900"
+              fontSize={{ base: "8xl", md: "9xl" }}
+              color="var(--melon)"
+              letterSpacing="-0.04em"
+              lineHeight="0.85"
+              mb={5}
+            >
+              58%
+            </Text>
+            <Text
+              className="reveal d1"
+              fontFamily="var(--font-cormorant)"
+              fontStyle="italic"
+              fontSize={{ base: "xl", md: "2xl" }}
+              fontWeight="600"
+              color="var(--dark)"
+              letterSpacing="-0.01em"
+              lineHeight="1.4"
+              mb={3}
+            >
+              of consumers discover new businesses on social media.
+            </Text>
+            <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" letterSpacing="0.08em" textTransform="uppercase">— Sprinklr</Text>
           </Box>
         </Box>
 
@@ -382,10 +382,9 @@ export default function Home() {
             </Text>
             <Text
               className="reveal d1"
-              fontFamily="var(--font-cormorant)"
-              fontStyle="italic"
-              fontSize={{ base: "lg", md: "2xl" }}
-              color="rgba(255,255,255,0.92)"
+              fontFamily="var(--font-dm-sans)"
+              fontSize={{ base: "sm", md: "md" }}
+              color="rgba(255,255,255,0.85)"
               lineHeight="1.6"
               mb={10}
               maxW="520px"
@@ -471,11 +470,11 @@ export default function Home() {
               <Box
                 as="button" className="stamp" bg="white" border="none" p={5}
                 cursor="pointer" textAlign="left" onClick={() => setModal("creator")}
-                style={{ boxShadow: "0 4px 20px rgba(26,79,122,0.1)", transition: "all 0.18s ease" }}
-                _hover={{ transform: "translateY(-2px)", boxShadow: "0 8px 28px rgba(26,79,122,0.16)" } as never}
+                style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.12)", transition: "all 0.18s ease" }}
+                _hover={{ transform: "translateY(-2px)", boxShadow: "0 8px 28px rgba(58,110,138,0.22)" } as never}
               >
                 <Flex align="center" gap={4}>
-                  <Box w="40px" h="40px" borderRadius="50%" bg="#FFFAE0" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
+                  <Box w="40px" h="40px" borderRadius="50%" bg="var(--yellow-card)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
                     <PiCameraLight size={20} />
                   </Box>
                   <VStack align="start" gap={0}>
@@ -487,11 +486,11 @@ export default function Home() {
               <Box
                 as="button" className="stamp" bg="white" border="none" p={5}
                 cursor="pointer" textAlign="left" onClick={() => setModal("business")}
-                style={{ boxShadow: "0 4px 20px rgba(232,87,26,0.1)", transition: "all 0.18s ease" }}
-                _hover={{ transform: "translateY(-2px)", boxShadow: "0 8px 28px rgba(232,87,26,0.16)" } as never}
+                style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.12)", transition: "all 0.18s ease" }}
+                _hover={{ transform: "translateY(-2px)", boxShadow: "0 8px 28px rgba(58,110,138,0.22)" } as never}
               >
                 <Flex align="center" gap={4}>
-                  <Box w="40px" h="40px" borderRadius="50%" bg="#FFFAE0" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
+                  <Box w="40px" h="40px" borderRadius="50%" bg="var(--yellow-card)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
                     <PiStorefrontLight size={20} />
                   </Box>
                   <VStack align="start" gap={0}>

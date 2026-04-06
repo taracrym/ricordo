@@ -41,7 +41,7 @@ const inputStyle = {
   h: "auto",
   _focus: {
     borderColor: "var(--blue-border)",
-    boxShadow: "0 0 0 3px rgba(126, 200, 218, 0.15)",
+    boxShadow: "0 0 0 3px rgba(104, 152, 176, 0.25)",
     outline: "none",
   },
   _placeholder: { color: "#B0A898" },
@@ -224,7 +224,7 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
                           borderRadius: "9999px",
                           border: `1.5px solid ${selected ? "var(--blue-border)" : "var(--border)"}`,
                           background: selected ? "var(--blue-card)" : "white",
-                          color: selected ? "#2A6E80" : "var(--muted)",
+                          color: selected ? "#3A6E8A" : "var(--muted)",
                           fontSize: "14px",
                           fontFamily: "var(--font-dm-sans), system-ui, sans-serif",
                           cursor: "pointer",
@@ -293,7 +293,7 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
                 disabled={loading}
                 style={{
                   width: "100%",
-                  background: loading ? "#C07060" : "#BA3801",
+                  background: loading ? "#7AAFC5" : "#3A6E8A",
                   color: "white",
                   borderRadius: "12px",
                   padding: "16px",
