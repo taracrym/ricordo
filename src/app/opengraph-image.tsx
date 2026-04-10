@@ -29,58 +29,18 @@ export default async function OgImage() {
           gap: 24,
         }}
       >
-        {/* r logo circle */}
-        <div
-          style={{
-            width: 120,
-            height: 120,
-            borderRadius: "50%",
-            background: "#FAF8F2",
-            border: "3px solid #E8DFC8",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <span
-            style={{
-              fontFamily: "Montserrat",
-              fontWeight: 900,
-              fontSize: 80,
-              color: "#efc374",
-              lineHeight: 1,
-              paddingBottom: 6,
-            }}
-          >
-            r
-          </span>
-        </div>
-
         {/* wordmark */}
         <div
           style={{
             fontFamily: "Montserrat",
             fontWeight: 900,
-            fontSize: 96,
-            color: "#111111",
+            fontSize: 120,
+            color: "#efc374",
             letterSpacing: "-4px",
             lineHeight: 1,
           }}
         >
           ricordo
-        </div>
-
-        {/* url */}
-        <div
-          style={{
-            fontFamily: "Montserrat",
-            fontWeight: 900,
-            fontSize: 28,
-            color: "#888880",
-            letterSpacing: "2px",
-          }}
-        >
-          ricordosocial.com
         </div>
       </div>
     ),
