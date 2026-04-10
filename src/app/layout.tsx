@@ -29,9 +29,22 @@ const greatVibes = Great_Vibes({
 })
 
 export const metadata: Metadata = {
-  title: "ricordo — local businesses + local content creators",
-  description:
-    "A marketplace connecting local content creators with local businesses for short-form video content.",
+  title: "ricordo",
+  description: "Connecting local content creators with local businesses for short-form video.",
+  metadataBase: new URL("https://ricordosocial.com"),
+  openGraph: {
+    title: "ricordo",
+    description: "Connecting local content creators with local businesses for short-form video.",
+    url: "https://ricordosocial.com",
+    siteName: "ricordo",
+    locale: "en_CA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ricordo",
+    description: "Connecting local content creators with local businesses for short-form video.",
+  },
 }
 
 export default function RootLayout({
