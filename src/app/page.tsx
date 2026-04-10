@@ -264,7 +264,7 @@ export default function Home() {
               lineHeight="1.1"
             >
               Edited videos, captions, and raw clips.{" "}
-              <Box as="span" fontStyle="italic" color="var(--dark)">Delivered within 48 hours.</Box>
+              <Box as="span" color="#efc374">Delivered within 48 hours.</Box>
             </Text>
           </Box>
         </Box>
