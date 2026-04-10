@@ -250,7 +250,7 @@ export default function Home() {
 
         {/* ── DELIVERABLE STATEMENT ── */}
         <Box
-          bg="var(--dark)" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
+          bg="var(--terra)" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
           position="relative" zIndex={2}
         >
           <Box maxW="960px" mx="auto">
@@ -264,7 +264,7 @@ export default function Home() {
               lineHeight="1.1"
             >
               Edited videos, captions, and raw clips.{" "}
-              <Box as="span" color="#efc374">Delivered within 48 hours.</Box>
+              <Box as="span" color="white">Delivered within 48 hours.</Box>
             </Text>
           </Box>
         </Box>
@@ -365,7 +365,7 @@ export default function Home() {
         <Box
           px={{ base: 6, md: 12 }} py={{ base: 20, md: 32 }}
           position="relative" zIndex={2}
-          bg="var(--dark)"
+          bg="var(--terra)"
         >
           <Box maxW="960px" mx="auto">
             <Text
@@ -373,7 +373,7 @@ export default function Home() {
               fontFamily="var(--font-nunito)"
               fontSize={{ base: "2.5rem", md: "6.25rem" }}
               fontWeight="900"
-              color="#efc374"
+              color="white"
               letterSpacing="-0.04em"
               lineHeight="0.9"
               mb={5}
@@ -428,7 +428,7 @@ export default function Home() {
         </Box>
 
         {/* ── FOOTER ── */}
-        <Box position="relative" zIndex={2} bg="var(--dark)">
+        <Box position="relative" zIndex={2} bg="var(--terra)">
           <Box py={6} px={{ base: 6, md: 12 }}>
             <Flex justify="space-between" align="center" flexWrap="wrap" gap={3}>
               <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="white" letterSpacing="-0.02em">ricordo</Text>
