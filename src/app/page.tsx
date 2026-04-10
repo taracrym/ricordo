@@ -250,7 +250,7 @@ export default function Home() {
 
         {/* ── DELIVERABLE STATEMENT ── */}
         <Box
-          bg="var(--terra)" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
+          bg="#efc374" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
           position="relative" zIndex={2}
         >
           <Box maxW="960px" mx="auto">
@@ -259,7 +259,7 @@ export default function Home() {
               fontFamily="var(--font-nunito)"
               fontWeight="900"
               fontSize={{ base: "2xl", md: "4rem" }}
-              color="white"
+              color="var(--dark)"
               letterSpacing="-0.03em"
               lineHeight="1.1"
             >
@@ -365,7 +365,7 @@ export default function Home() {
         <Box
           px={{ base: 6, md: 12 }} py={{ base: 20, md: 32 }}
           position="relative" zIndex={2}
-          bg="var(--terra)"
+          bg="#efc374"
         >
           <Box maxW="960px" mx="auto">
             <Text
@@ -373,7 +373,7 @@ export default function Home() {
               fontFamily="var(--font-nunito)"
               fontSize={{ base: "2.5rem", md: "6.25rem" }}
               fontWeight="900"
-              color="white"
+              color="var(--dark)"
               letterSpacing="-0.04em"
               lineHeight="0.9"
               mb={5}
@@ -384,7 +384,7 @@ export default function Home() {
               className="reveal d1"
               fontFamily="var(--font-dm-sans)"
               fontSize={{ base: "sm", md: "md" }}
-              color="white"
+              color="var(--dark)"
               lineHeight="1.6"
               mb={10}
               maxW="520px"
@@ -395,14 +395,14 @@ export default function Home() {
               <button
                 onClick={() => setModal("creator")}
                 style={{
-                  background: "white", color: "var(--marine)",
+                  background: "white", color: "var(--dark)",
                   padding: "15px 36px", fontSize: "12px",
                   fontFamily: "var(--font-dm-sans), system-ui, sans-serif",
                   fontWeight: 700, letterSpacing: "0.1em",
                   textTransform: "uppercase", cursor: "pointer", border: "none",
                   transition: "all 0.2s ease",
                 }}
-                onMouseEnter={e => (e.currentTarget.style.background = "var(--limoncello)")}
+                onMouseEnter={e => (e.currentTarget.style.background = "#FAF8F2")}
                 onMouseLeave={e => (e.currentTarget.style.background = "white")}
               >
                 I&apos;m a Creator
@@ -410,16 +410,16 @@ export default function Home() {
               <button
                 onClick={() => setModal("business")}
                 style={{
-                  background: "transparent", color: "white",
+                  background: "#111111", color: "white",
                   padding: "15px 36px", fontSize: "12px",
                   fontFamily: "var(--font-dm-sans), system-ui, sans-serif",
                   fontWeight: 700, letterSpacing: "0.1em",
                   textTransform: "uppercase", cursor: "pointer",
-                  border: "1.5px solid rgba(255,255,255,0.4)",
+                  border: "none",
                   transition: "all 0.2s ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.background = "var(--melon)"; e.currentTarget.style.borderColor = "var(--melon)" }}
-                onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.4)" }}
+                onMouseEnter={e => { e.currentTarget.style.background = "#333333" }}
+                onMouseLeave={e => { e.currentTarget.style.background = "#111111" }}
               >
                 I&apos;m a Business
               </button>
@@ -428,10 +428,10 @@ export default function Home() {
         </Box>
 
         {/* ── FOOTER ── */}
-        <Box position="relative" zIndex={2} bg="var(--terra)">
+        <Box position="relative" zIndex={2} bg="#111111">
           <Box py={6} px={{ base: 6, md: 12 }}>
             <Flex justify="space-between" align="center" flexWrap="wrap" gap={3}>
-              <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="white" letterSpacing="-0.02em">ricordo</Text>
+              <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="#efc374" letterSpacing="-0.02em">ricordo</Text>
               <Flex gap={3} align="center">
                 <a href="mailto:tara@ricordosocial.com" aria-label="Email" style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", padding: "8px", borderRadius: "8px", background: "rgba(255,255,255,0.08)", transition: "all 0.2s" }} onMouseEnter={e => { e.currentTarget.style.color = "white"; e.currentTarget.style.background = "rgba(255,255,255,0.16)" }} onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,0.75)"; e.currentTarget.style.background = "rgba(255,255,255,0.08)" }}>
                   <PiEnvelopeLight size={22} />
