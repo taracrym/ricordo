@@ -250,7 +250,7 @@ export default function Home() {
 
         {/* ── DELIVERABLE STATEMENT ── */}
         <Box
-          bg="#efc374" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
+          bg="#FBF5E8" px={{ base: 6, md: 12 }} py={{ base: 10, md: 14 }}
           position="relative" zIndex={2}
         >
           <Box maxW="960px" mx="auto">
@@ -264,7 +264,7 @@ export default function Home() {
               lineHeight="1.1"
             >
               Edited videos, captions, and raw clips.{" "}
-              <Box as="span" color="white">Delivered within 48 hours.</Box>
+              <Box as="span" color="#C4883A">Delivered within 48 hours.</Box>
             </Text>
           </Box>
         </Box>
@@ -410,7 +410,7 @@ export default function Home() {
               <button
                 onClick={() => setModal("business")}
                 style={{
-                  background: "#111111", color: "white",
+                  background: "#C4883A", color: "white",
                   padding: "15px 36px", fontSize: "12px",
                   fontFamily: "var(--font-dm-sans), system-ui, sans-serif",
                   fontWeight: 700, letterSpacing: "0.1em",
@@ -418,8 +418,8 @@ export default function Home() {
                   border: "none",
                   transition: "all 0.2s ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.background = "#333333" }}
-                onMouseLeave={e => { e.currentTarget.style.background = "#111111" }}
+                onMouseEnter={e => { e.currentTarget.style.background = "#A86E28" }}
+                onMouseLeave={e => { e.currentTarget.style.background = "#C4883A" }}
               >
                 I&apos;m a Business
               </button>
@@ -428,10 +428,10 @@ export default function Home() {
         </Box>
 
         {/* ── FOOTER ── */}
-        <Box position="relative" zIndex={2} bg="#111111">
+        <Box position="relative" zIndex={2} bg="#C4883A">
           <Box py={6} px={{ base: 6, md: 12 }}>
             <Flex justify="space-between" align="center" flexWrap="wrap" gap={3}>
-              <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="#efc374" letterSpacing="-0.02em">ricordo</Text>
+              <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="white" letterSpacing="-0.02em">ricordo</Text>
               <Flex gap={3} align="center">
                 <a href="mailto:tara@ricordosocial.com" aria-label="Email" style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", padding: "8px", borderRadius: "8px", background: "rgba(255,255,255,0.08)", transition: "all 0.2s" }} onMouseEnter={e => { e.currentTarget.style.color = "white"; e.currentTarget.style.background = "rgba(255,255,255,0.16)" }} onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,0.75)"; e.currentTarget.style.background = "rgba(255,255,255,0.08)" }}>
                   <PiEnvelopeLight size={22} />
