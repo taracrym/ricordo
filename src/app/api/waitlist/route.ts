@@ -82,15 +82,14 @@ export async function POST(request: NextRequest) {
       ? formatCreatorEmail(data)
       : formatBusinessEmail(data)
 
-    // TODO: uncomment once you put the api key big sis
-    
-    // await resend.emails.send({
-    //   // TODO: Change to "ricordo <no-reply@ricordosocial.com>" after verifying your domain in Resend
-    //   from: "ricordo <onboarding@resend.dev>",
-    //   to: "tara@ricordosocial.com",
-    //   subject,
-    //   html,
-    // })
+    const { error } = await resend.emails.send({
+      from: "ricordo <onboarding@resend.dev>",
+      to: "tara@ricordosocial.com",
+      subject,
+      html,
+    })
+
+    if (error) throw new Error(error.message)
 
     return NextResponse.json({ success: true })
   } catch (error) {
