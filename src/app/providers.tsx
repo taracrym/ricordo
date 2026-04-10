@@ -8,7 +8,11 @@ const system = createSystem(defaultConfig, {
         heading: { value: "var(--font-cormorant), Georgia, serif" },
         body: { value: "var(--font-dm-sans), system-ui, sans-serif" },
       },
-      // Exponential scale — Major Third (×1.25), 14px minimum
+    },
+  },
+  globalCss: {
+    "input:focus, input:focus-visible, select:focus, select:focus-visible, textarea:focus, textarea:focus-visible": {
+      outline: "none !important",
     },
   },
 })
