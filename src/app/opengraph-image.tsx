@@ -42,6 +42,20 @@ export default async function OgImage() {
         >
           ricordo
         </div>
+
+        {/* tagline */}
+        <div
+          style={{
+            fontFamily: "Montserrat",
+            fontWeight: 900,
+            fontSize: 32,
+            color: "#111111",
+            letterSpacing: "-1px",
+            lineHeight: 1,
+          }}
+        >
+          local content creators + local businesses
+        </div>
       </div>
     ),
     {
