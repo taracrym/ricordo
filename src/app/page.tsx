@@ -395,22 +395,22 @@ export default function Home() {
               <button
                 onClick={() => setModal("creator")}
                 style={{
-                  background: "#efc374", color: "var(--dark)",
+                  background: "#3A6E8A", color: "white",
                   padding: "15px 36px", fontSize: "12px",
                   fontFamily: "var(--font-dm-sans), system-ui, sans-serif",
                   fontWeight: 700, letterSpacing: "0.1em",
                   textTransform: "uppercase", cursor: "pointer", border: "none",
                   transition: "all 0.2s ease",
                 }}
-                onMouseEnter={e => (e.currentTarget.style.background = "#D4A050")}
-                onMouseLeave={e => (e.currentTarget.style.background = "#efc374")}
+                onMouseEnter={e => (e.currentTarget.style.background = "#2D5570")}
+                onMouseLeave={e => (e.currentTarget.style.background = "#3A6E8A")}
               >
                 I&apos;m a Creator
               </button>
               <button
                 onClick={() => setModal("business")}
                 style={{
-                  background: "#C4883A", color: "white",
+                  background: "#efc374", color: "var(--dark)",
                   padding: "15px 36px", fontSize: "12px",
                   fontFamily: "var(--font-dm-sans), system-ui, sans-serif",
                   fontWeight: 700, letterSpacing: "0.1em",
@@ -418,8 +418,8 @@ export default function Home() {
                   border: "none",
                   transition: "all 0.2s ease",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.background = "#A86E28" }}
-                onMouseLeave={e => { e.currentTarget.style.background = "#C4883A" }}
+                onMouseEnter={e => { e.currentTarget.style.background = "#D4A050" }}
+                onMouseLeave={e => { e.currentTarget.style.background = "#efc374" }}
               >
                 I&apos;m a Business
               </button>
