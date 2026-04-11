@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
       : formatBusinessEmail(data)
 
     const { error } = await resend.emails.send({
-      from: "ricordo <onboarding@resend.dev>",
+      from: "ricordo <no-reply@ricordosocial.com>",
       to: "tara@ricordosocial.com",
       subject,
       html,
