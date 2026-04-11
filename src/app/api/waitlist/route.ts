@@ -69,126 +69,79 @@ function formatBusinessEmail(data: Record<string, string>): string {
 
 function creatorWelcomeEmail(data: Record<string, string>): string {
   return `
-    <div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;background:#FAF8F2;">
+    <div style="font-family:Georgia,serif;max-width:560px;margin:0 auto;padding:48px 32px;background:#ffffff;">
+      <p style="font-size:20px;font-weight:900;color:#efc374;margin:0 0 32px;letter-spacing:-0.02em;font-family:system-ui,sans-serif;">ricordo</p>
 
-      <!-- Header -->
-      <div style="background:#efc374;padding:40px 40px 32px;text-align:center;">
-        <p style="font-size:36px;font-weight:900;color:#111111;margin:0;letter-spacing:-0.04em;line-height:1;">ricordo</p>
-        <p style="font-size:13px;color:#111111;margin:8px 0 0;letter-spacing:0.08em;text-transform:uppercase;opacity:0.7;">local content creators + local businesses</p>
-      </div>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        Hi ${data.firstName},
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        You're on the list — and I'm genuinely excited you're here.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        ricordo is a platform I'm building to connect local content creators with local businesses
+        that need short-form video. The idea is simple: you film, you get paid, the business gets
+        content that actually works. No agencies, no middlemen.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        When we launch in ${data.location || "your city"}, I'll reach out personally to match you
+        with businesses in your area that fit your niche. You'll get a shot list, show up, film —
+        and the rest is handled.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 32px;">
+        In the meantime, follow along at
+        <a href="https://instagram.com/ricordosocial" style="color:#efc374;text-decoration:none;">@ricordosocial</a>
+        — I'll be sharing updates there first.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0;">
+        Talk soon,<br/>
+        <strong>Tara</strong><br/>
+        <span style="color:#888;font-size:14px;">founder, ricordo</span>
+      </p>
 
-      <!-- Body -->
-      <div style="padding:40px;">
-        <h1 style="font-size:24px;font-weight:700;color:#111111;margin:0 0 16px;line-height:1.2;">
-          you're on the list, ${data.firstName}.
-        </h1>
-        <p style="font-size:15px;color:#444;line-height:1.7;margin:0 0 24px;">
-          Welcome to ricordo — we're building something we think you're going to love.
-          We're pairing local content creators with local businesses so you can get paid
-          doing what you already do: filming great content.
-        </p>
-
-        <!-- Highlight box -->
-        <div style="background:#FBF5E8;border-left:3px solid #efc374;padding:20px 24px;margin:0 0 28px;border-radius:0 8px 8px 0;">
-          <p style="font-size:15px;font-weight:600;color:#111111;margin:0 0 8px;">when we launch in your area:</p>
-          <ul style="font-size:14px;color:#444;line-height:1.8;margin:0;padding-left:18px;">
-            <li>You'll be matched with local businesses that fit your niche</li>
-            <li>You'll film on-location with a shot list built for Reels + TikTok</li>
-            <li>You'll get paid — no agencies, no middlemen</li>
-          </ul>
-        </div>
-
-        <p style="font-size:15px;color:#444;line-height:1.7;margin:0 0 32px;">
-          We'll reach out personally when we launch in <strong>${data.location || "your city"}</strong>.
-          In the meantime, follow us on Instagram for updates.
-        </p>
-
-        <!-- CTA -->
-        <div style="text-align:center;margin-bottom:32px;">
-          <a href="https://instagram.com/ricordosocial"
-             style="display:inline-block;background:#efc374;color:#111111;font-weight:700;font-size:12px;
-                    letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;
-                    padding:14px 32px;">
-            Follow @ricordosocial
-          </a>
-        </div>
-
-        <p style="font-size:14px;color:#888;line-height:1.7;margin:0;">
-          Can't wait to have you in the network.<br/>
-          — Tara, founder of ricordo
-        </p>
-      </div>
-
-      <!-- Footer -->
-      <div style="border-top:1px solid #E8DFC8;padding:20px 40px;text-align:center;">
-        <p style="font-size:11px;color:#B0A898;margin:0;">
-          ricordosocial.com · you're receiving this because you joined our waitlist
-        </p>
-      </div>
-
+      <p style="font-size:12px;color:#bbb;margin-top:48px;border-top:1px solid #f0ebe0;padding-top:20px;">
+        ricordosocial.com — you're receiving this because you joined our waitlist
+      </p>
     </div>
   `
 }
 
 function businessWelcomeEmail(data: Record<string, string>): string {
   return `
-    <div style="font-family:system-ui,sans-serif;max-width:600px;margin:0 auto;background:#FAF8F2;">
+    <div style="font-family:Georgia,serif;max-width:560px;margin:0 auto;padding:48px 32px;background:#ffffff;">
+      <p style="font-size:20px;font-weight:900;color:#efc374;margin:0 0 32px;letter-spacing:-0.02em;font-family:system-ui,sans-serif;">ricordo</p>
 
-      <!-- Header -->
-      <div style="background:#efc374;padding:40px 40px 32px;text-align:center;">
-        <p style="font-size:36px;font-weight:900;color:#111111;margin:0;letter-spacing:-0.04em;line-height:1;">ricordo</p>
-        <p style="font-size:13px;color:#111111;margin:8px 0 0;letter-spacing:0.08em;text-transform:uppercase;opacity:0.7;">local content creators + local businesses</p>
-      </div>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        Hi ${data.businessName},
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        You're on the list — thank you for signing up.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        ricordo is a platform connecting local businesses with local content creators for
+        short-form video. Think of it as having a creator on call who actually knows your city,
+        understands your brand, and delivers content you can post the same week — without the
+        agency price tag.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
+        When we launch in ${data.city || "your city"}, you'll start receiving content pitches from
+        vetted local creators. You pick who you want to work with, book a shoot, and get edited
+        videos, captions, and raw clips delivered within 48 hours. No contracts, no long-term commitment.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 32px;">
+        Follow us at
+        <a href="https://instagram.com/ricordosocial" style="color:#efc374;text-decoration:none;">@ricordosocial</a>
+        for updates in the meantime.
+      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0;">
+        Looking forward to working with you,<br/>
+        <strong>Tara</strong><br/>
+        <span style="color:#888;font-size:14px;">founder, ricordo</span>
+      </p>
 
-      <!-- Body -->
-      <div style="padding:40px;">
-        <h1 style="font-size:24px;font-weight:700;color:#111111;margin:0 0 16px;line-height:1.2;">
-          welcome to the network, ${data.businessName}.
-        </h1>
-        <p style="font-size:15px;color:#444;line-height:1.7;margin:0 0 24px;">
-          You're on the list — and we're glad you're here. ricordo connects local businesses
-          like yours with creators who actually know your city and can tell your story on camera.
-          No agencies. No contracts. Just content that works.
-        </p>
-
-        <!-- Highlight box -->
-        <div style="background:#FBF5E8;border-left:3px solid #efc374;padding:20px 24px;margin:0 0 28px;border-radius:0 8px 8px 0;">
-          <p style="font-size:15px;font-weight:600;color:#111111;margin:0 0 8px;">when we launch in your area:</p>
-          <ul style="font-size:14px;color:#444;line-height:1.8;margin:0;padding-left:18px;">
-            <li>Local creators will pitch you content ideas tailored to your business</li>
-            <li>You'll get edited videos, captions, and raw clips — ready to post</li>
-            <li>Delivered within 48 hours of the shoot</li>
-          </ul>
-        </div>
-
-        <p style="font-size:15px;color:#444;line-height:1.7;margin:0 0 32px;">
-          We'll be in touch when we launch in <strong>${data.city || "your city"}</strong>.
-          Follow us on Instagram to stay in the loop before then.
-        </p>
-
-        <!-- CTA -->
-        <div style="text-align:center;margin-bottom:32px;">
-          <a href="https://instagram.com/ricordosocial"
-             style="display:inline-block;background:#efc374;color:#111111;font-weight:700;font-size:12px;
-                    letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;
-                    padding:14px 32px;">
-            Follow @ricordosocial
-          </a>
-        </div>
-
-        <p style="font-size:14px;color:#888;line-height:1.7;margin:0;">
-          Excited to work with you.<br/>
-          — Tara, founder of ricordo
-        </p>
-      </div>
-
-      <!-- Footer -->
-      <div style="border-top:1px solid #E8DFC8;padding:20px 40px;text-align:center;">
-        <p style="font-size:11px;color:#B0A898;margin:0;">
-          ricordosocial.com · you're receiving this because you joined our waitlist
-        </p>
-      </div>
-
+      <p style="font-size:12px;color:#bbb;margin-top:48px;border-top:1px solid #f0ebe0;padding-top:20px;">
+        ricordosocial.com — you're receiving this because you joined our waitlist
+      </p>
     </div>
   `
 }
@@ -220,8 +173,8 @@ export async function POST(request: NextRequest) {
 
     // Welcome email to the person who signed up
     const welcomeSubject = isCreator
-      ? "you're on the list 🎬"
-      : "welcome to the network ✨"
+      ? "you're on the list"
+      : "welcome to the network"
 
     const welcomeHtml = isCreator
       ? creatorWelcomeEmail(data)
