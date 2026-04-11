@@ -33,7 +33,7 @@ const inputStyle = {
   border: "1.5px solid",
   borderColor: "var(--border)",
   borderRadius: "10px",
-  fontSize: "sm",
+  fontSize: "md",
   fontFamily: "var(--font-dm-sans)",
   color: "var(--dark)",
   px: 4,
