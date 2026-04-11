@@ -433,10 +433,10 @@ export default function Home() {
             <Flex justify="space-between" align="center" flexWrap="wrap" gap={3}>
               <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="#efc374" letterSpacing="-0.02em">ricordo</Text>
               <Flex gap={3} align="center">
-                <a href="mailto:tara@ricordosocial.com" aria-label="Email" style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", padding: "8px", borderRadius: "8px", background: "rgba(255,255,255,0.08)", transition: "all 0.2s" }} onMouseEnter={e => { e.currentTarget.style.color = "white"; e.currentTarget.style.background = "rgba(255,255,255,0.16)" }} onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,0.75)"; e.currentTarget.style.background = "rgba(255,255,255,0.08)" }}>
+                <a href="mailto:tara@ricordosocial.com" aria-label="Email" style={{ color: "#111111", display: "flex", alignItems: "center", padding: "8px", borderRadius: "8px", background: "rgba(0,0,0,0.06)", transition: "all 0.2s" }} onMouseEnter={e => { e.currentTarget.style.color = "#efc374"; e.currentTarget.style.background = "rgba(0,0,0,0.1)" }} onMouseLeave={e => { e.currentTarget.style.color = "#111111"; e.currentTarget.style.background = "rgba(0,0,0,0.06)" }}>
                   <PiEnvelopeLight size={22} />
                 </a>
-                <a href="https://instagram.com/ricordosocial" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ color: "rgba(255,255,255,0.75)", display: "flex", alignItems: "center", padding: "8px", borderRadius: "8px", background: "rgba(255,255,255,0.08)", transition: "all 0.2s" }} onMouseEnter={e => { e.currentTarget.style.color = "white"; e.currentTarget.style.background = "rgba(255,255,255,0.16)" }} onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,0.75)"; e.currentTarget.style.background = "rgba(255,255,255,0.08)" }}>
+                <a href="https://instagram.com/ricordosocial" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ color: "#111111", display: "flex", alignItems: "center", padding: "8px", borderRadius: "8px", background: "rgba(0,0,0,0.06)", transition: "all 0.2s" }} onMouseEnter={e => { e.currentTarget.style.color = "#efc374"; e.currentTarget.style.background = "rgba(0,0,0,0.1)" }} onMouseLeave={e => { e.currentTarget.style.color = "#111111"; e.currentTarget.style.background = "rgba(0,0,0,0.06)" }}>
                   <PiInstagramLogoLight size={22} />
                 </a>
               </Flex>
