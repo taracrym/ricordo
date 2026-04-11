@@ -227,12 +227,14 @@ export async function POST(request: NextRequest) {
       ? creatorWelcomeEmail(data)
       : businessWelcomeEmail(data)
 
-    await resend.emails.send({
-      from: "Tara at ricordo <tara@ricordosocial.com>",
+    const { error: welcomeError } = await resend.emails.send({
+      from: "Tara at ricordo <no-reply@ricordosocial.com>",
       to: data.email,
       subject: welcomeSubject,
       html: welcomeHtml,
     })
+
+    if (welcomeError) console.error("Welcome email failed:", welcomeError)
 
     return NextResponse.json({ success: true })
   } catch (error) {
