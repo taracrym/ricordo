@@ -21,7 +21,7 @@ export default function ThankYouPage() {
           fontFamily="var(--font-nunito)"
           fontSize="2xl"
           fontWeight="900"
-          color="var(--red)"
+          color="#efc374"
           letterSpacing="-0.02em"
           cursor="pointer"
           onClick={() => router.push("/")}
