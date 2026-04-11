@@ -5,6 +5,8 @@ import { Box, Text, VStack, Textarea } from "@chakra-ui/react"
 
 interface FormData {
   businessName: string
+  firstName: string
+  lastName: string
   email: string
   city: string
   budget: string
@@ -13,7 +15,7 @@ interface FormData {
 }
 
 const EMPTY: FormData = {
-  businessName: "", email: "", city: "", budget: "", frequency: "", description: "",
+  businessName: "", firstName: "", lastName: "", email: "", city: "", budget: "", frequency: "", description: "",
 }
 
 const inputStyle: React.CSSProperties = {
@@ -161,6 +163,28 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
                   onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                   onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
                 />
+              </Box>
+
+              {/* First + Last Name */}
+              <Box display="grid" gridTemplateColumns="1fr 1fr" gap={3}>
+                <Box>
+                  <label style={labelStyle} htmlFor="firstName">First Name</label>
+                  <input
+                    id="firstName" name="firstName" placeholder="Jane"
+                    value={form.firstName} onChange={handleChange} required style={inputStyle}
+                    onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                    onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
+                  />
+                </Box>
+                <Box>
+                  <label style={labelStyle} htmlFor="lastName">Last Name</label>
+                  <input
+                    id="lastName" name="lastName" placeholder="Smith"
+                    value={form.lastName} onChange={handleChange} required style={inputStyle}
+                    onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                    onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
+                  />
+                </Box>
               </Box>
 
               {/* Email */}

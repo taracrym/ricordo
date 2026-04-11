@@ -54,6 +54,7 @@ function formatBusinessEmail(data: Record<string, string>): string {
       </h2>
       <table style="width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,0.06);">
         ${row("Business", data.businessName || "")}
+        ${row("Contact", `${data.firstName || ""} ${data.lastName || ""}`.trim())}
         ${row("Email", `<a href="mailto:${data.email}" style="color:#efc374;">${data.email}</a>`)}
         ${row("City", data.city || "")}
         ${row("Monthly Budget", data.budget || "")}
@@ -112,7 +113,7 @@ function businessWelcomeEmail(data: Record<string, string>): string {
       <p style="font-size:20px;font-weight:900;color:#efc374;margin:0 0 32px;letter-spacing:-0.02em;font-family:system-ui,sans-serif;">ricordo</p>
 
       <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
-        Hi ${data.businessName},
+        Hi ${data.firstName || data.businessName},
       </p>
       <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
         You're on the list — thank you for signing up.
