@@ -259,7 +259,7 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
                   placeholder="Tell us about your business and the kind of content you'd like..."
                   value={form.description} onChange={handleChange}
                   rows={4} bg="white" border="1.5px solid" borderColor="var(--border)"
-                  borderRadius="10px" fontSize="sm" fontFamily="var(--font-dm-sans)"
+                  borderRadius="10px" fontSize="md" fontFamily="var(--font-dm-sans)"
                   color="var(--dark)" px={4} py={3} resize="vertical"
                   _focus={{ borderColor: "var(--yellow-border)", boxShadow: "0 0 0 3px rgba(239, 195, 116, 0.15)", outline: "none" }}
                   _placeholder={{ color: "#B0A898" }}
