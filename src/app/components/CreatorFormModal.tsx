@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
 import {
   Box, Flex, Text, VStack, SimpleGrid, Input, Textarea, Field,
@@ -63,6 +63,30 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
   const [selectedNiches, setSelectedNiches] = useState<string[]>([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+
+  const refs = {
+    firstName:    useRef<HTMLInputElement>(null),
+    lastName:     useRef<HTMLInputElement>(null),
+    email:        useRef<HTMLInputElement>(null),
+    instagram:    useRef<HTMLInputElement>(null),
+    tiktok:       useRef<HTMLInputElement>(null),
+    portfolio:    useRef<HTMLInputElement>(null),
+    location:     useRef<HTMLInputElement>(null),
+    rate:         useRef<HTMLInputElement>(null),
+    availability: useRef<HTMLInputElement>(null),
+    notes:        useRef<HTMLTextAreaElement>(null),
+  }
+
+  const order = ["firstName","lastName","email","instagram","tiktok","portfolio","location","rate","availability","notes"] as const
+
+  const focusNext = (current: typeof order[number]) => {
+    const idx = order.indexOf(current)
+    if (idx < order.length - 1) (refs[order[idx + 1]] as React.RefObject<HTMLElement>).current?.focus()
+  }
+
+  const onEnter = (field: typeof order[number]) => (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") { e.preventDefault(); focusNext(field) }
+  }
 
   useEffect(() => {
     const scrollY = window.scrollY
@@ -177,18 +201,18 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
               <SimpleGrid columns={{ base: 1, sm: 2 }} gap={4}>
                 <Field.Root required>
                   <Field.Label {...labelStyle}>First Name</Field.Label>
-                  <Input name="firstName" placeholder="Sofia" value={form.firstName} onChange={handleChange} required {...inputStyle} />
+                  <Input ref={refs.firstName} name="firstName" placeholder="Sofia" value={form.firstName} onChange={handleChange} required enterKeyHint="next" onKeyDown={onEnter("firstName")} {...inputStyle} />
                 </Field.Root>
                 <Field.Root required>
                   <Field.Label {...labelStyle}>Last Name</Field.Label>
-                  <Input name="lastName" placeholder="Rossi" value={form.lastName} onChange={handleChange} required {...inputStyle} />
+                  <Input ref={refs.lastName} name="lastName" placeholder="Rossi" value={form.lastName} onChange={handleChange} required enterKeyHint="next" onKeyDown={onEnter("lastName")} {...inputStyle} />
                 </Field.Root>
               </SimpleGrid>
 
               {/* Email */}
               <Field.Root required>
                 <Field.Label {...labelStyle}>Email</Field.Label>
-                <Input name="email" type="email" placeholder="you@example.com" value={form.email} onChange={handleChange} required {...inputStyle} />
+                <Input ref={refs.email} name="email" type="email" placeholder="you@example.com" value={form.email} onChange={handleChange} required enterKeyHint="next" onKeyDown={onEnter("email")} {...inputStyle} />
               </Field.Root>
 
               {/* Instagram + TikTok */}
@@ -198,14 +222,14 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
                     Instagram{" "}
                     <Box as="span" color="var(--muted)" textTransform="none" fontWeight="400" letterSpacing="0">(optional)</Box>
                   </Field.Label>
-                  <Input name="instagram" placeholder="@handle" value={form.instagram} onChange={handleChange} {...inputStyle} />
+                  <Input ref={refs.instagram} name="instagram" placeholder="@handle" value={form.instagram} onChange={handleChange} enterKeyHint="next" onKeyDown={onEnter("instagram")} {...inputStyle} />
                 </Field.Root>
                 <Field.Root>
                   <Field.Label {...labelStyle}>
                     TikTok{" "}
                     <Box as="span" color="var(--muted)" textTransform="none" fontWeight="400" letterSpacing="0">(optional)</Box>
                   </Field.Label>
-                  <Input name="tiktok" placeholder="@handle" value={form.tiktok} onChange={handleChange} {...inputStyle} />
+                  <Input ref={refs.tiktok} name="tiktok" placeholder="@handle" value={form.tiktok} onChange={handleChange} enterKeyHint="next" onKeyDown={onEnter("tiktok")} {...inputStyle} />
                 </Field.Root>
               </SimpleGrid>
 
@@ -215,7 +239,7 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
                   Portfolio / Website{" "}
                   <Box as="span" color="var(--muted)" textTransform="none" fontWeight="400" letterSpacing="0">(optional)</Box>
                 </Field.Label>
-                <Input name="portfolio" placeholder="https://yoursite.com" value={form.portfolio} onChange={handleChange} {...inputStyle} />
+                <Input ref={refs.portfolio} name="portfolio" placeholder="https://yoursite.com" value={form.portfolio} onChange={handleChange} enterKeyHint="next" onKeyDown={onEnter("portfolio")} {...inputStyle} />
               </Field.Root>
 
               {/* Niches */}
@@ -251,13 +275,13 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
               {/* Location */}
               <Field.Root required>
                 <Field.Label {...labelStyle}>City</Field.Label>
-                <Input name="location" placeholder="e.g. Vancouver, Toronto, Montreal" value={form.location} onChange={handleChange} required {...inputStyle} />
+                <Input ref={refs.location} name="location" placeholder="e.g. Vancouver, Toronto, Montreal" value={form.location} onChange={handleChange} required enterKeyHint="next" onKeyDown={onEnter("location")} {...inputStyle} />
               </Field.Root>
 
               {/* Rate */}
               <Field.Root>
                 <Field.Label {...labelStyle}>Rate</Field.Label>
-                <Input name="rate" placeholder="e.g. $75/video or $60/hour" value={form.rate} onChange={handleChange} {...inputStyle} />
+                <Input ref={refs.rate} name="rate" placeholder="e.g. $75/video or $60/hour" value={form.rate} onChange={handleChange} enterKeyHint="next" onKeyDown={onEnter("rate")} {...inputStyle} />
                 <Field.HelperText fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1.5}>
                   Your rate, per video or hourly
                 </Field.HelperText>
@@ -266,7 +290,7 @@ export default function CreatorFormModal({ onClose }: { onClose: () => void }) {
               {/* Availability */}
               <Field.Root>
                 <Field.Label {...labelStyle}>Availability</Field.Label>
-                <Input name="availability" placeholder="e.g. 10 hours/week" value={form.availability} onChange={handleChange} {...inputStyle} />
+                <Input ref={refs.availability} name="availability" placeholder="e.g. 10 hours/week" value={form.availability} onChange={handleChange} enterKeyHint="next" onKeyDown={onEnter("availability")} {...inputStyle} />
                 <Field.HelperText fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1.5}>
                   How many hours per week are you available?
                 </Field.HelperText>

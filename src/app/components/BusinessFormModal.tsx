@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useRouter } from "next/navigation"
 import { Box, Text, VStack, Textarea } from "@chakra-ui/react"
 
@@ -59,6 +59,33 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
   const [form, setForm] = useState<FormData>(EMPTY)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+
+  const refs = {
+    businessName: useRef<HTMLInputElement>(null),
+    firstName:    useRef<HTMLInputElement>(null),
+    lastName:     useRef<HTMLInputElement>(null),
+    email:        useRef<HTMLInputElement>(null),
+    city:         useRef<HTMLInputElement>(null),
+    budget:       useRef<HTMLSelectElement>(null),
+    frequency:    useRef<HTMLSelectElement>(null),
+    description:  useRef<HTMLTextAreaElement>(null),
+  }
+
+  const order: (keyof typeof refs)[] = ["businessName","firstName","lastName","email","city","budget","frequency","description"]
+
+  const focusNext = (current: keyof typeof refs) => {
+    const idx = order.indexOf(current)
+    if (idx < order.length - 1) refs[order[idx + 1]].current?.focus()
+  }
+
+  const onEnter = (field: keyof typeof refs) => (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") { e.preventDefault(); focusNext(field) }
+  }
+
+  const onSelectChange = (field: keyof typeof refs) => (e: React.ChangeEvent<HTMLSelectElement>) => {
+    handleChange(e)
+    setTimeout(() => focusNext(field), 50)
+  }
 
   useEffect(() => {
     const scrollY = window.scrollY
@@ -168,8 +195,9 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
               <Box>
                 <label style={labelStyle} htmlFor="businessName">Business Name</label>
                 <input
-                  id="businessName" name="businessName" placeholder="e.g. Bella Cucina"
+                  ref={refs.businessName} id="businessName" name="businessName" placeholder="e.g. Bella Cucina"
                   value={form.businessName} onChange={handleChange} required style={inputStyle}
+                  enterKeyHint="next" onKeyDown={onEnter("businessName")}
                   onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                   onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
                 />
@@ -180,8 +208,9 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
                 <Box>
                   <label style={labelStyle} htmlFor="firstName">First Name</label>
                   <input
-                    id="firstName" name="firstName" placeholder="Jane"
+                    ref={refs.firstName} id="firstName" name="firstName" placeholder="Jane"
                     value={form.firstName} onChange={handleChange} required style={inputStyle}
+                    enterKeyHint="next" onKeyDown={onEnter("firstName")}
                     onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                     onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
                   />
@@ -189,8 +218,9 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
                 <Box>
                   <label style={labelStyle} htmlFor="lastName">Last Name</label>
                   <input
-                    id="lastName" name="lastName" placeholder="Smith"
+                    ref={refs.lastName} id="lastName" name="lastName" placeholder="Smith"
                     value={form.lastName} onChange={handleChange} required style={inputStyle}
+                    enterKeyHint="next" onKeyDown={onEnter("lastName")}
                     onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                     onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
                   />
@@ -201,8 +231,9 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
               <Box>
                 <label style={labelStyle} htmlFor="email">Email</label>
                 <input
-                  id="email" name="email" type="email" placeholder="hello@yourbusiness.com"
+                  ref={refs.email} id="email" name="email" type="email" placeholder="hello@yourbusiness.com"
                   value={form.email} onChange={handleChange} required style={inputStyle}
+                  enterKeyHint="next" onKeyDown={onEnter("email")}
                   onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                   onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
                 />
@@ -212,8 +243,9 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
               <Box>
                 <label style={labelStyle} htmlFor="city">City</label>
                 <input
-                  id="city" name="city" placeholder="e.g. Vancouver, Toronto, Montreal"
+                  ref={refs.city} id="city" name="city" placeholder="e.g. Vancouver, Toronto, Montreal"
                   value={form.city} onChange={handleChange} required style={inputStyle}
+                  enterKeyHint="next" onKeyDown={onEnter("city")}
                   onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                   onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
                 />
@@ -224,7 +256,8 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
                 <label style={labelStyle} htmlFor="budget">Monthly Content Budget</label>
                 <div style={{ position: "relative" }}>
                   <select
-                    id="budget" name="budget" value={form.budget} onChange={handleChange}
+                    ref={refs.budget} id="budget" name="budget" value={form.budget}
+                    onChange={onSelectChange("budget")}
                     style={selectStyle}
                     onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                     onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
@@ -245,7 +278,8 @@ export default function BusinessFormModal({ onClose }: { onClose: () => void }) 
                 <label style={labelStyle} htmlFor="frequency">How often do you need content?</label>
                 <div style={{ position: "relative" }}>
                   <select
-                    id="frequency" name="frequency" value={form.frequency} onChange={handleChange}
+                    ref={refs.frequency} id="frequency" name="frequency" value={form.frequency}
+                    onChange={onSelectChange("frequency")}
                     style={selectStyle}
                     onFocus={(e) => Object.assign(e.target.style, focusStyle)}
                     onBlur={(e) => Object.assign(e.target.style, { borderColor: "var(--border)", boxShadow: "none" })}
