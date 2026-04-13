@@ -123,17 +123,6 @@ export default function Home() {
                 {/* Left: text + CTA cards */}
                 <GridItem>
                   <VStack align="start" gap={5}>
-                    <Text
-                      className="reveal d1"
-                      fontFamily="var(--font-dm-sans)"
-                      fontSize={{ base: "sm", md: "md" }}
-                      color="var(--dark)"
-                      lineHeight="1.75"
-                    >
-                      <Box as="span" fontWeight="700">Creators</Box> get paid doing what they love.<br />
-                      <Box as="span" fontWeight="700">Businesses</Box> get video that actually gets watched — without the agency price tag.
-                    </Text>
-
                     <Box
                       className="stamp reveal d2"
                       as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
@@ -147,8 +136,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid filming businesses in your city</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>You film. We handle the rest.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Get paid filming businesses in your city.</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -166,8 +154,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Find a local creator who gets your brand</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>Tell us what you need — we&apos;ll take it from there.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Find a local creator who gets your brand.</Text>
                         </VStack>
                       </Flex>
                     </Box>
