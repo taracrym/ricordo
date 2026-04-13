@@ -123,6 +123,17 @@ export default function Home() {
                 {/* Left: text + CTA cards */}
                 <GridItem>
                   <VStack align="start" gap={5}>
+                    <Text
+                      className="reveal d1"
+                      fontFamily="var(--font-dm-sans)"
+                      fontSize={{ base: "sm", md: "md" }}
+                      color="var(--dark)"
+                      lineHeight="1.75"
+                    >
+                      <Box as="span" fontWeight="700">Creators</Box> get paid doing what they love.<br />
+                      <Box as="span" fontWeight="700">Businesses</Box> get video that actually gets watched — without the agency price tag.
+                    </Text>
+
                     <Box
                       className="stamp reveal d2"
                       as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
