@@ -100,10 +100,10 @@ export default function PhoneMockup() {
                   </div>
                   <div>
                     <div style={{ display:"flex", gap:"6px", alignItems:"center" }}>
-                      <span style={{ fontWeight:600, fontSize:"12px", color:"#1B3344" }}>Tara</span>
+                      <span style={{ fontWeight:600, fontSize:"12px", color:"#1B3344" }}>Jamie via Ricordo</span>
                       <span style={{ fontSize:"11px", color:"#8E8E93" }}>· 9:04 AM</span>
                     </div>
-                    <div style={{ fontSize:"10px", color:"#8E8E93" }}>tara@ricordosocial.com</div>
+                    <div style={{ fontSize:"10px", color:"#8E8E93" }}>creator@ricordosocial.com</div>
                   </div>
                   <span style={{ marginLeft:"auto", fontSize:"16px", color:"#8E8E93" }}>↩</span>
                 </div>
@@ -168,7 +168,7 @@ export default function PhoneMockup() {
               {/* Sign-off */}
               <div style={{ padding:"0 16px", fontSize:"11px", color:"#8E8E93", lineHeight:1.6 }}>
                 Let me know if you need any tweaks.<br/>
-                <span style={{ color:"#3A3A3C", fontWeight:500 }}>– Tara</span>
+                <span style={{ color:"#3A3A3C", fontWeight:500 }}>– Jamie</span>
               </div>
 
             </div>

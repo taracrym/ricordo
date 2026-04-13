@@ -48,6 +48,17 @@ export default function Home() {
           <Box flex={1} px={{ base: 6, md: 12 }} pt={{ base: 2, md: 4 }} pb={{ base: 2, md: 2 }}>
             <Box maxW="960px" mx="auto">
 
+              {/* One-liner descriptor */}
+              <Text
+                fontFamily="var(--font-dm-sans)"
+                fontSize={{ base: "xs", md: "sm" }}
+                color="var(--dark)"
+                mb={{ base: 3, md: 4 }}
+                opacity={0.7}
+              >
+                A marketplace connecting independent creators with businesses that need great content.
+              </Text>
+
               {/* Animated wordmark */}
               <Box mb={{ base: 2, md: 3 }} className="reveal">
                 <Text
@@ -120,7 +131,7 @@ export default function Home() {
                       lineHeight="1.75"
                     >
                       <Box as="span" fontWeight="700">Creators</Box> get paid doing what they love.<br />
-                      <Box as="span" fontWeight="700">Businesses</Box> get scroll-stopping video — without the agency price tag.
+                      <Box as="span" fontWeight="700">Businesses</Box> get video that actually gets watched — without the agency price tag.
                     </Text>
 
                     <Box
@@ -136,7 +147,8 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid to film local businesses</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid filming businesses in your city</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>We handle the matching, the brief, and the payment — you just show up and film.</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -154,7 +166,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Find a local creator who gets your brand</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Find an independent creator who gets your brand</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -229,11 +241,11 @@ export default function Home() {
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">{step.body}</Text>
                     ) : step.num === "01" ? (
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                        We pair a creator who fits your niche with a business worth filming. Both sides see each other&apos;s profile before anything starts.
+                        Creators and businesses are matched based on niche, content style, and fit — so both sides know what to expect before anything starts.
                       </Text>
                     ) : step.num === "02" ? (
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                        The creator films on-location with a shot list built for Reels + TikTok. The business stays as hands-on or hands-off as they want.
+                        The creator brings the vision. The business brings the story. The shot list is built for Reels and TikTok — so the content is ready to perform from day one.
                       </Text>
                     ) : step.num === "03" ? (
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
@@ -315,7 +327,7 @@ export default function Home() {
                       Not an agency.
                     </Text>
                     <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                      A curated network of local creators who know your city and film your story. Book one shoot, get content that&apos;s ready to post.
+                      Not an agency. Just independent creators, real businesses, and content worth remembering. Book one shoot — no contracts, no commitment.
                     </Text>
                   </VStack>
                 </Box>
@@ -332,6 +344,16 @@ export default function Home() {
           textAlign="center"
         >
           <Box maxW="600px" mx="auto">
+            <Text
+              fontFamily="var(--font-dm-sans)"
+              fontSize={{ base: "xs", md: "sm" }}
+              letterSpacing="0.1em"
+              textTransform="uppercase"
+              color="var(--muted)"
+              mb={3}
+            >
+              the opportunity is real:
+            </Text>
             <Text
               className="reveal"
               fontFamily="var(--font-nunito)"
@@ -378,7 +400,7 @@ export default function Home() {
               lineHeight="0.9"
               mb={5}
             >
-              ready to be part of something local?
+              the waitlist is open.
             </Text>
             <Text
               className="reveal d1"
@@ -389,7 +411,7 @@ export default function Home() {
               mb={10}
               maxW="520px"
             >
-              Whether you&apos;re a creator looking for your next gig or a business ready for content that actually works — you&apos;re in the right place.
+              Ricordo is launching soon. Be one of the first creators or businesses on the platform — and get matched the moment we go live.
             </Text>
             <Flex gap={4} flexWrap="wrap" className="reveal d2">
               <button
@@ -431,7 +453,10 @@ export default function Home() {
         <Box position="relative" zIndex={2} bg="var(--bg)">
           <Box py={6} px={{ base: 6, md: 12 }}>
             <Flex justify="space-between" align="center" flexWrap="wrap" gap={3}>
-              <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="#efc374" letterSpacing="-0.02em">ricordo</Text>
+              <VStack align="start" gap={0}>
+                <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="#efc374" letterSpacing="-0.02em">ricordo</Text>
+                <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="#888">ricordo means memory in Italian.</Text>
+              </VStack>
               <Flex gap={3} align="center">
                 <a href="mailto:tara@ricordosocial.com" aria-label="Email" style={{ color: "#111111", display: "flex", alignItems: "center", padding: "8px", borderRadius: "8px", background: "rgba(0,0,0,0.06)", transition: "all 0.2s" }} onMouseEnter={e => { e.currentTarget.style.color = "#efc374"; e.currentTarget.style.background = "rgba(0,0,0,0.1)" }} onMouseLeave={e => { e.currentTarget.style.color = "#111111"; e.currentTarget.style.background = "rgba(0,0,0,0.06)" }}>
                   <PiEnvelopeLight size={22} />
@@ -479,7 +504,7 @@ export default function Home() {
                   </Box>
                   <VStack align="start" gap={0}>
                     <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)">I&apos;m a Creator</Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid to film local businesses</Text>
+                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid filming businesses in your city</Text>
                   </VStack>
                 </Flex>
               </Box>
@@ -495,7 +520,7 @@ export default function Home() {
                   </Box>
                   <VStack align="start" gap={0}>
                     <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)">I&apos;m a Business</Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Authentic local content, on demand</Text>
+                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Independent creators, on demand</Text>
                   </VStack>
                 </Flex>
               </Box>
