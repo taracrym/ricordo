@@ -326,7 +326,7 @@ export default function Home() {
                       Not an agency.
                     </Text>
                     <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                      Not an agency. Just independent creators, real businesses, and content worth remembering. Book one shoot — no contracts, no commitment.
+                      Just independent creators, real businesses, and content worth remembering. Book one shoot — no contracts, no commitment.
                     </Text>
                   </VStack>
                 </Box>
