@@ -167,6 +167,7 @@ export default function Home() {
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
                           <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Find an independent creator who gets your brand</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>We match you with the right creator, handle the brief, and deliver content ready to post.</Text>
                         </VStack>
                       </Flex>
                     </Box>
