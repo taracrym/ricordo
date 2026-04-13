@@ -119,8 +119,8 @@ export default function Home() {
                       color="var(--dark)"
                       lineHeight="1.75"
                     >
-                      Creators get paid doing what they love.<br />
-                      Businesses get scroll-stopping video — without the agency price tag.
+                      <Box as="span" fontWeight="700">Creators</Box> get paid doing what they love.<br />
+                      <Box as="span" fontWeight="700">Businesses</Box> get scroll-stopping video — without the agency price tag.
                     </Text>
 
                     <Box
