@@ -410,7 +410,7 @@ export default function Home() {
               mb={10}
               maxW="520px"
             >
-              Ricordo is launching soon. Be one of the first creators or businesses on the platform — and get matched the moment we go live.
+              Be one of the first creators or businesses on the platform — and get matched the moment we go live.
             </Text>
             <Flex gap={4} flexWrap="wrap" className="reveal d2">
               <button
