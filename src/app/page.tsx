@@ -148,7 +148,7 @@ export default function Home() {
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
                           <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid filming businesses in your city</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>We handle the matching, the brief, and the payment — you just show up and film.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>You film. We handle the rest.</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -166,8 +166,8 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Find an independent creator who gets your brand</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>We match you with the right creator, handle the brief, and deliver content ready to post.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Find a local creator who gets your brand</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)" mt={1}>Tell us what you need — we&apos;ll take it from there.</Text>
                         </VStack>
                       </Flex>
                     </Box>
