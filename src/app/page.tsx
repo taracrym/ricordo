@@ -138,7 +138,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0.5}>
                           <Text fontFamily="var(--font-nunito)" fontSize="lg" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Earn money filming content for businesses near you.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Film local. Get paid. No cold pitching required.</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -156,7 +156,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0.5}>
                           <Text fontFamily="var(--font-nunito)" fontSize="lg" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Get great video content from a local creator, not an agency.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Scroll-stopping content, without the agency price tag.</Text>
                         </VStack>
                       </Flex>
                     </Box>
