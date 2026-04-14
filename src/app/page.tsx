@@ -127,36 +127,36 @@ export default function Home() {
                   <VStack align="start" gap={5}>
                     <Box
                       className="stamp reveal d2"
-                      as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
+                      as="button" bg="white" border="none" p={7} cursor="pointer" w="100%"
                       textAlign="left" onClick={() => setModal("creator")}
                       style={{ boxShadow: "0 6px 28px rgba(58,110,138,0.12)", transition: "all 0.2s ease" }}
                       _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(58,110,138,0.22)" } as never}
                     >
                       <Flex align="center" gap={4}>
-                        <Box w="42px" h="42px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
-                          <PiCameraLight size={22} />
+                        <Box w="48px" h="48px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
+                          <PiCameraLight size={24} />
                         </Box>
-                        <VStack align="start" gap={0}>
-                          <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Get paid doing what you love — film local businesses.</Text>
+                        <VStack align="start" gap={0.5}>
+                          <Text fontFamily="var(--font-nunito)" fontSize="lg" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Earn money filming content for businesses near you.</Text>
                         </VStack>
                       </Flex>
                     </Box>
 
                     <Box
                       className="stamp reveal d3"
-                      as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
+                      as="button" bg="white" border="none" p={7} cursor="pointer" w="100%"
                       textAlign="left" onClick={() => setModal("business")}
                       style={{ boxShadow: "0 6px 28px rgba(58,110,138,0.12)", transition: "all 0.2s ease" }}
                       _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(58,110,138,0.22)" } as never}
                     >
                       <Flex align="center" gap={4}>
-                        <Box w="42px" h="42px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
-                          <PiStorefrontLight size={22} />
+                        <Box w="48px" h="48px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
+                          <PiStorefrontLight size={24} />
                         </Box>
-                        <VStack align="start" gap={0}>
-                          <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Video that actually gets watched — no agency price tag.</Text>
+                        <VStack align="start" gap={0.5}>
+                          <Text fontFamily="var(--font-nunito)" fontSize="lg" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Get great video content from a local creator, not an agency.</Text>
                         </VStack>
                       </Flex>
                     </Box>
