@@ -127,17 +127,17 @@ export default function Home() {
                   <VStack align="start" gap={5}>
                     <Box
                       className="stamp reveal d2"
-                      as="button" bg="white" border="none" p={7} cursor="pointer" w="100%"
+                      as="button" bg="white" border="none" p={8} cursor="pointer" w="100%"
                       textAlign="left" onClick={() => setModal("creator")}
                       style={{ boxShadow: "0 6px 28px rgba(58,110,138,0.12)", transition: "all 0.2s ease" }}
                       _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(58,110,138,0.22)" } as never}
                     >
                       <Flex align="center" gap={4}>
-                        <Box w="48px" h="48px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
+                        <Box w="54px" h="54px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--marine)">
                           <PiCameraLight size={24} />
                         </Box>
                         <VStack align="start" gap={0.5}>
-                          <Text fontFamily="var(--font-nunito)" fontSize="lg" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
+                          <Text fontFamily="var(--font-nunito)" fontSize="xl" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
                           <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Film local. Get paid. No cold pitching required.</Text>
                         </VStack>
                       </Flex>
@@ -145,17 +145,17 @@ export default function Home() {
 
                     <Box
                       className="stamp reveal d3"
-                      as="button" bg="white" border="none" p={7} cursor="pointer" w="100%"
+                      as="button" bg="white" border="none" p={8} cursor="pointer" w="100%"
                       textAlign="left" onClick={() => setModal("business")}
                       style={{ boxShadow: "0 6px 28px rgba(58,110,138,0.12)", transition: "all 0.2s ease" }}
                       _hover={{ transform: "translateY(-3px)", boxShadow: "0 12px 36px rgba(58,110,138,0.22)" } as never}
                     >
                       <Flex align="center" gap={4}>
-                        <Box w="48px" h="48px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
+                        <Box w="54px" h="54px" borderRadius="50%" bg="var(--bg)" display="flex" alignItems="center" justifyContent="center" flexShrink={0} color="var(--melon)">
                           <PiStorefrontLight size={24} />
                         </Box>
                         <VStack align="start" gap={0.5}>
-                          <Text fontFamily="var(--font-nunito)" fontSize="lg" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
+                          <Text fontFamily="var(--font-nunito)" fontSize="xl" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
                           <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Scroll-stopping content, without the agency price tag.</Text>
                         </VStack>
                       </Flex>
