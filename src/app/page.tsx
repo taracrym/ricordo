@@ -116,7 +116,7 @@ export default function Home() {
                 mb={{ base: 6, md: 8 }}
                 opacity={0.7}
               >
-                Ricordo is a marketplace connecting independent creators with businesses that need great content.
+                A marketplace connecting independent creators with businesses that need great content.
               </Text>
 
               {/* Two-column: left=text+cards, right=phone */}
