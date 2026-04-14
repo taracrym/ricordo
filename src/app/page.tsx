@@ -48,17 +48,6 @@ export default function Home() {
           <Box flex={1} px={{ base: 6, md: 12 }} pt={{ base: 2, md: 4 }} pb={{ base: 2, md: 2 }}>
             <Box maxW="960px" mx="auto">
 
-              {/* One-liner descriptor */}
-              <Text
-                fontFamily="var(--font-dm-sans)"
-                fontSize={{ base: "xs", md: "sm" }}
-                color="var(--dark)"
-                mb={{ base: 3, md: 4 }}
-                opacity={0.7}
-              >
-                A marketplace connecting independent creators with businesses that need great content.
-              </Text>
-
               {/* Animated wordmark */}
               <Box mb={{ base: 2, md: 3 }} className="reveal">
                 <Text
@@ -117,23 +106,25 @@ export default function Home() {
                 </Box>
               </Box>
 
+              {/* Marketplace descriptor */}
+              <Text
+                className="reveal d1"
+                fontFamily="var(--font-dm-sans)"
+                fontSize={{ base: "sm", md: "md" }}
+                color="var(--dark)"
+                lineHeight="1.75"
+                mb={{ base: 6, md: 8 }}
+                opacity={0.7}
+              >
+                Ricordo is a marketplace connecting independent creators with businesses that need great content.
+              </Text>
+
               {/* Two-column: left=text+cards, right=phone */}
               <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={{ base: 8, md: 6 }} alignItems="start">
 
                 {/* Left: text + CTA cards */}
                 <GridItem>
                   <VStack align="start" gap={5}>
-                    <Text
-                      className="reveal d1"
-                      fontFamily="var(--font-dm-sans)"
-                      fontSize={{ base: "sm", md: "md" }}
-                      color="var(--dark)"
-                      lineHeight="1.75"
-                    >
-                      <Box as="span" fontWeight="700">Creators</Box> get paid doing what they love.<br />
-                      <Box as="span" fontWeight="700">Businesses</Box> get video that actually gets watched — without the agency price tag.
-                    </Text>
-
                     <Box
                       className="stamp reveal d2"
                       as="button" bg="white" border="none" p={6} cursor="pointer" w="100%"
@@ -147,7 +138,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Creator</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Get paid filming businesses in your city.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Get paid doing what you love — film local businesses.</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -165,7 +156,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0}>
                           <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Find a local creator who gets your brand.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--muted)">Video that actually gets watched — no agency price tag.</Text>
                         </VStack>
                       </Flex>
                     </Box>
