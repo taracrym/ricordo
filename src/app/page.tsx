@@ -39,6 +39,7 @@ export default function Home() {
               color="#efc374"
               letterSpacing="-0.02em"
               userSelect="none"
+              cursor="default"
             >
               ricordo
             </Text>
