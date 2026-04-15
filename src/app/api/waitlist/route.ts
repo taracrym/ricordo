@@ -94,9 +94,9 @@ function creatorWelcomeEmail(data: Record<string, string>): string {
         <a href="https://instagram.com/ricordosocial" style="color:#efc374;text-decoration:none;">@ricordosocial</a>
         — I'll be sharing updates there first.
       </p>
-      <p style="font-size:16px;color:#111;line-height:1.7;margin:0;">
-        Talk soon, <strong>Tara</strong> <span style="color:#888;font-size:14px;">(founder, ricordo)</span>
-      </p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 2px;">Talk soon,</p>
+      <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 2px;"><strong>Tara</strong></p>
+      <p style="font-size:14px;color:#888;margin:0;">founder, ricordo</p>
 
       <p style="font-size:12px;color:#bbb;margin-top:48px;border-top:1px solid #f0ebe0;padding-top:20px;">
         ricordosocial.com — you're receiving this because you joined our waitlist
