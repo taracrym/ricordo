@@ -82,7 +82,7 @@ function creatorWelcomeEmail(data: Record<string, string>): string {
       <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
         ricordo is a platform I'm building to connect local content creators with local businesses
         that need short-form video. The idea is simple: you film, you get paid, the business gets
-        content that actually works. No agencies, no middlemen.
+        content that actually works.
       </p>
       <p style="font-size:16px;color:#111;line-height:1.7;margin:0 0 20px;">
         When we launch in ${data.location || "your city"}, I'll reach out personally to match you
