@@ -274,56 +274,43 @@ export default function Home() {
 
         {/* ── LOW RISK ── */}
         <Box
-          px={{ base: 6, md: 12 }} py={{ base: 16, md: 24 }}
+          px={{ base: 6, md: 12 }} py={{ base: 14, md: 20 }}
           position="relative" zIndex={2}
           bg="var(--bg)"
+          borderTop="1px solid var(--border)"
+          borderBottom="1px solid var(--border)"
         >
           <Box maxW="960px" mx="auto">
-            <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={{ base: 12, md: 20 }} alignItems="start">
-              <Box>
-                <Text
-                  className="reveal-l"
-                  fontFamily="var(--font-nunito)"
-                  fontSize={{ base: "3.125rem", md: "5rem" }}
-                  fontWeight="900"
-                  color="var(--dark)"
-                  letterSpacing="-0.03em"
-                  lineHeight="0.92"
-                  mb={3}
-                >
-                  book one shoot,{" "}
-                  <Box as="span" color="var(--dark)">or keep things going</Box>
-                </Text>
-                <Text
-                  className="reveal d1"
-                  fontFamily="var(--font-cormorant)"
-                  fontStyle="italic"
-                  fontSize={{ base: "xl", md: "2xl" }}
-                  color="var(--dark)"
-                  lineHeight="1.5"
-                >
-                  No long-term commitment required.
-                </Text>
-              </Box>
-
-              <VStack align="stretch" gap={4}>
-                <Box
-                  className="stamp reveal d1"
-                  bg="white"
-                  px={5} py={5}
-                  style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.10)" }}
-                >
-                  <VStack align="start" gap={1}>
-                    <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--dark)" letterSpacing="-0.01em">
-                      Not an agency.
-                    </Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                      Just vetted creators, real businesses, and content worth keeping.
-                    </Text>
-                  </VStack>
-                </Box>
-              </VStack>
-            </Grid>
+            <Text
+              className="reveal"
+              fontFamily="var(--font-nunito)"
+              fontSize={{ base: "2xl", md: "3xl" }}
+              fontWeight="900"
+              color="var(--dark)"
+              letterSpacing="-0.02em"
+              mb={2}
+            >
+              Not an agency.
+            </Text>
+            <Text
+              className="reveal d1"
+              fontFamily="var(--font-dm-sans)"
+              fontSize={{ base: "sm", md: "md" }}
+              color="var(--dark)"
+              lineHeight="1.75"
+              mb={4}
+            >
+              Just vetted creators, real businesses, and content worth keeping.
+            </Text>
+            <Text
+              className="reveal d2"
+              fontFamily="var(--font-dm-sans)"
+              fontSize={{ base: "xs", md: "sm" }}
+              color="var(--muted)"
+              letterSpacing="0.02em"
+            >
+              No long-term commitment required.
+            </Text>
           </Box>
         </Box>
 
