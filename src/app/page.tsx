@@ -279,51 +279,32 @@ export default function Home() {
           bg="var(--bg)"
         >
           <Box maxW="960px" mx="auto">
-            <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={{ base: 12, md: 20 }} alignItems="start">
-              <Box>
-                <Text
-                  className="reveal-l"
-                  fontFamily="var(--font-nunito)"
-                  fontSize={{ base: "3.125rem", md: "5rem" }}
-                  fontWeight="900"
-                  color="var(--dark)"
-                  letterSpacing="-0.03em"
-                  lineHeight="0.92"
-                  mb={3}
-                >
-                  low risk,{" "}
-                  <Box as="span" color="var(--dark)">low commitment</Box>
-                </Text>
-                <Text
-                  className="reveal d1"
-                  fontFamily="var(--font-cormorant)"
-                  fontStyle="italic"
-                  fontSize={{ base: "xl", md: "2xl" }}
-                  color="var(--dark)"
-                  lineHeight="1.5"
-                >
-                  No contracts. No subscriptions.<br />No obligation to continue.
-                </Text>
+            <VStack align="start" gap={4}>
+              <Text
+                className="reveal"
+                fontFamily="var(--font-dm-sans)"
+                fontSize={{ base: "sm", md: "md" }}
+                color="var(--dark)"
+                lineHeight="1.75"
+              >
+                Book one shoot, or keep things going — no long-term commitment required.
+              </Text>
+              <Box
+                className="stamp reveal d1"
+                bg="white"
+                px={5} py={5}
+                style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.10)" }}
+              >
+                <VStack align="start" gap={1}>
+                  <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--dark)" letterSpacing="-0.01em">
+                    Not an agency.
+                  </Text>
+                  <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
+                    Just vetted creators, real businesses, and content worth keeping.
+                  </Text>
+                </VStack>
               </Box>
-
-              <VStack align="stretch" gap={4}>
-                <Box
-                  className="stamp reveal d1"
-                  bg="white"
-                  px={5} py={5}
-                  style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.10)" }}
-                >
-                  <VStack align="start" gap={1}>
-                    <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--dark)" letterSpacing="-0.01em">
-                      Not an agency.
-                    </Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                      Just vetted creators, real businesses, and content worth keeping. Book one shoot — no contracts, no commitment.
-                    </Text>
-                  </VStack>
-                </Box>
-              </VStack>
-            </Grid>
+            </VStack>
           </Box>
         </Box>
 
