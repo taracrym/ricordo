@@ -279,79 +279,51 @@ export default function Home() {
           bg="var(--bg)"
         >
           <Box maxW="960px" mx="auto">
-            <VStack align="start" gap={4}>
-              <Text
-                className="reveal"
-                fontFamily="var(--font-dm-sans)"
-                fontSize={{ base: "sm", md: "md" }}
-                color="var(--dark)"
-                lineHeight="1.75"
-              >
-                Book one shoot, or keep things going — no long-term commitment required.
-              </Text>
-              <Box
-                className="stamp reveal d1"
-                bg="white"
-                px={5} py={5}
-                style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.10)" }}
-              >
-                <VStack align="start" gap={1}>
-                  <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--dark)" letterSpacing="-0.01em">
-                    Not an agency.
-                  </Text>
-                  <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                    Just vetted creators, real businesses, and content worth keeping.
-                  </Text>
-                </VStack>
+            <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={{ base: 12, md: 20 }} alignItems="start">
+              <Box>
+                <Text
+                  className="reveal-l"
+                  fontFamily="var(--font-nunito)"
+                  fontSize={{ base: "3.125rem", md: "5rem" }}
+                  fontWeight="900"
+                  color="var(--dark)"
+                  letterSpacing="-0.03em"
+                  lineHeight="0.92"
+                  mb={3}
+                >
+                  book one shoot,{" "}
+                  <Box as="span" color="var(--dark)">or keep things going</Box>
+                </Text>
+                <Text
+                  className="reveal d1"
+                  fontFamily="var(--font-cormorant)"
+                  fontStyle="italic"
+                  fontSize={{ base: "xl", md: "2xl" }}
+                  color="var(--dark)"
+                  lineHeight="1.5"
+                >
+                  No long-term commitment required.
+                </Text>
               </Box>
-            </VStack>
-          </Box>
-        </Box>
 
-        {/* ── STAT ── */}
-        <Box
-          px={{ base: 6, md: 12 }} py={{ base: 16, md: 24 }}
-          position="relative" zIndex={2}
-          bg="var(--bg)"
-          textAlign="center"
-        >
-          <Box maxW="600px" mx="auto">
-            <Text
-              fontFamily="var(--font-dm-sans)"
-              fontSize={{ base: "xs", md: "sm" }}
-              letterSpacing="0.1em"
-              textTransform="uppercase"
-              color="var(--muted)"
-              mb={3}
-            >
-              the opportunity is real:
-            </Text>
-            <Text
-              className="reveal"
-              fontFamily="var(--font-nunito)"
-              fontWeight="900"
-              fontSize={{ base: "7.75rem", md: "10rem" }}
-              color="var(--dark)"
-              letterSpacing="-0.04em"
-              lineHeight="0.85"
-              mb={5}
-            >
-              58%
-            </Text>
-            <Text
-              className="reveal d1"
-              fontFamily="var(--font-cormorant)"
-              fontStyle="italic"
-              fontSize={{ base: "xl", md: "2xl" }}
-              fontWeight="600"
-              color="var(--dark)"
-              letterSpacing="-0.01em"
-              lineHeight="1.4"
-              mb={3}
-            >
-              of consumers discover new businesses on social media.
-            </Text>
-            <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)" letterSpacing="0.08em" textTransform="uppercase">— Sprinklr</Text>
+              <VStack align="stretch" gap={4}>
+                <Box
+                  className="stamp reveal d1"
+                  bg="white"
+                  px={5} py={5}
+                  style={{ boxShadow: "0 4px 20px rgba(58,110,138,0.10)" }}
+                >
+                  <VStack align="start" gap={1}>
+                    <Text fontFamily="var(--font-nunito)" fontWeight="900" fontSize={{ base: "md", md: "lg" }} color="var(--dark)" letterSpacing="-0.01em">
+                      Not an agency.
+                    </Text>
+                    <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
+                      Just vetted creators, real businesses, and content worth keeping.
+                    </Text>
+                  </VStack>
+                </Box>
+              </VStack>
+            </Grid>
           </Box>
         </Box>
 
