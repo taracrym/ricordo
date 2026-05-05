@@ -117,7 +117,7 @@ export default function Home() {
                 mb={{ base: 6, md: 8 }}
                 opacity={0.7}
               >
-                A marketplace connecting independent creators with businesses that need great content.
+                The easy way to book a vetted local creator. Events, launches, daily content — delivered within 48 hours.
               </Text>
 
               {/* Two-column: left=text+cards, right=phone */}
@@ -157,7 +157,7 @@ export default function Home() {
                         </Box>
                         <VStack align="start" gap={0.5}>
                           <Text fontFamily="var(--font-nunito)" fontSize="xl" fontWeight="900" color="var(--dark)" letterSpacing="-0.01em">I&apos;m a Business</Text>
-                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Scroll-stopping content, without the agency price tag.</Text>
+                          <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--muted)">Tell us what you need. A vetted creator shows up and films it.</Text>
                         </VStack>
                       </Flex>
                     </Box>
@@ -203,9 +203,9 @@ export default function Home() {
             </Text>
             <VStack gap={{ base: 0, md: 0 }} align="stretch">
               {[
-                { num: "01", title: "The match is made", body: null, color: "#efc374" },
-                { num: "02", title: "Content comes to life", body: null, color: "#efc374" },
-                { num: "03", title: "Everyone wins", body: null, color: "#efc374" },
+                { num: "01", title: "Tell us what you need", body: null, color: "#efc374" },
+                { num: "02", title: "Your creator shows up", body: null, color: "#efc374" },
+                { num: "03", title: "Content delivered", body: null, color: "#efc374" },
               ].map((step, idx) => (
                 <Box
                   key={step.num}
@@ -232,15 +232,15 @@ export default function Home() {
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">{step.body}</Text>
                     ) : step.num === "01" ? (
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                        Creators and businesses are matched based on niche, content style, and fit — so both sides know what to expect before anything starts.
+                        Share a quick brief — your business, what you need captured, and when. We find the right creator and send them your way.
                       </Text>
                     ) : step.num === "02" ? (
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                        The creator brings the vision. The business brings the story. The shot list is built for Reels and TikTok — so the content is ready to perform from day one.
+                        They arrive briefed and ready. The shot list is built for Reels and TikTok — so your content is made to perform from day one.
                       </Text>
                     ) : step.num === "03" ? (
                       <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                        Creators get paid. Businesses get edited videos, captions, and raw clips — ready to post within 48 hours.
+                        Edited videos, captions, and raw clips — ready to post within 48 hours. Creators get paid. Everyone's happy.
                       </Text>
                     ) : null}
                   </Grid>
@@ -318,7 +318,7 @@ export default function Home() {
                       Not an agency.
                     </Text>
                     <Text fontFamily="var(--font-dm-sans)" fontSize={{ base: "sm", md: "md" }} color="var(--dark)" lineHeight="1.75">
-                      Just independent creators, real businesses, and content worth remembering. Book one shoot — no contracts, no commitment.
+                      Just vetted creators, real businesses, and content worth keeping. Book one shoot — no contracts, no commitment.
                     </Text>
                   </VStack>
                 </Box>
@@ -391,7 +391,7 @@ export default function Home() {
               lineHeight="0.9"
               mb={5}
             >
-              the waitlist is open.
+              early access is open.
             </Text>
             <Text
               className="reveal d1"
@@ -402,7 +402,7 @@ export default function Home() {
               mb={10}
               maxW="520px"
             >
-              Be one of the first creators or businesses on the platform — and get matched the moment we go live.
+              We&apos;re launching in Victoria first. Be one of the first businesses — or creators — to get early access.
             </Text>
             <Flex gap={4} flexWrap="wrap" className="reveal d2">
               <button
@@ -477,7 +477,7 @@ export default function Home() {
               cursor="pointer" color="var(--dark)" fontSize="22px" lineHeight={1}
             >✕</Box>
             <Text fontFamily="var(--font-nunito)" fontSize="2xl" fontWeight="900" color="var(--dark)" letterSpacing="-0.02em" mb={2}>
-              join the network
+              get early access
             </Text>
             <Text fontFamily="var(--font-dm-sans)" fontSize="sm" color="var(--dark)" mb={8} lineHeight="1.6">
               Are you a creator or a business?
@@ -495,7 +495,7 @@ export default function Home() {
                   </Box>
                   <VStack align="start" gap={0}>
                     <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)">I&apos;m a Creator</Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get paid filming businesses in your city</Text>
+                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Get booked by local businesses. Show up and film.</Text>
                   </VStack>
                 </Flex>
               </Box>
@@ -511,7 +511,7 @@ export default function Home() {
                   </Box>
                   <VStack align="start" gap={0}>
                     <Text fontFamily="var(--font-nunito)" fontSize="md" fontWeight="900" color="var(--dark)">I&apos;m a Business</Text>
-                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Independent creators, on demand</Text>
+                    <Text fontFamily="var(--font-dm-sans)" fontSize="xs" color="var(--dark)">Book a local creator for your next shoot.</Text>
                   </VStack>
                 </Flex>
               </Box>
